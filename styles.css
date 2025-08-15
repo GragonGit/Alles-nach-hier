@@ -1,5 +1,5 @@
 :root {
-  --obfDisplay: none;
+  --obfDisplay: block;
 }
 
 .obf {
