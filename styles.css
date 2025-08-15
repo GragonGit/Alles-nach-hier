@@ -1,5 +1,32 @@
 :root {
   --hiddenDisplay: none;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-wrap: balance;
+}
+
+body {
+  --padding-inline: 2rem;
+  --content-max-width: 100ch;
+
+  display: grid;
+  grid-template-columns: [padding-start] minmax(var(--padding-inline), 1fr) [content-start] min(100% - var(--padding-inline) * 2, var(--content-max-width)) [content-end] minmax(var(--padding-inline), 1fr) [padding-end];
+}
+
+body>* {
+  grid-column: content;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+h2 {
+  font-size: x-large;
+}
+
+h3 {
+  font-size: larger;
 }
 
 .hidden {
