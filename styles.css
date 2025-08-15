@@ -1,0 +1,7 @@
+:root {
+  --obfDisplay: none;
+}
+
+.obf {
+  display: var(--obfDisplay);
+}

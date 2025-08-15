@@ -1,5 +1,6 @@
-const elements = document.getElementsByClassName("obf");
+document.getElementById("showButton").addEventListener("click", myScript)
 
-for (let i = 0; i < elements.length; i++) {
-  console.log(elements[i].nodeName);
+function myScript() {
+
+  console.log("test")
 }
