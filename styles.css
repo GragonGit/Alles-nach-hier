@@ -1,8 +1,14 @@
 :root {
   --hiddenDisplay: none;
+  --circleSize: 10%;
+  --circleGap: 70px;
+  --circleColor: rgba(0, 0, 0, 0.05);
 
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-wrap: balance;
+
+  background-image: radial-gradient(var(--circleColor) var(--circleSize), transparent var(--circleSize));
+  background-size: var(--circleGap) var(--circleGap);
 }
 
 body {
@@ -15,6 +21,17 @@ body {
 
 body>* {
   grid-column: content;
+  margin: 0;
+  padding: 3rem 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  width: fit-content;
+  background-color: white;
+  box-shadow: 0 0 20px 15px white;
 }
 
 h1 {
